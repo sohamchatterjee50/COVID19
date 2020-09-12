@@ -69,8 +69,6 @@ const Notify = () => {
                                                 <td key={j + makeid(5)}>{numList[keyName].substr(numList[keyName].indexOf(" ")+1)}</td>
                                                   </>
                                               )
-
-
                                                 ))
                                              }
                                        </tr>

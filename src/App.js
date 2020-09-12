@@ -3,7 +3,7 @@ import './App.css';
 import Link from './components/Link/component.js';
 import Contact from './components/Contact/component.js';
 import Notify from './components/Notify/component.js';
-import Hospital from './components/Hospital.js';
+import Hospital from './components/Hospital/component.js';
 import MedicalCollegeBed from './components/MedicalCollegeBed.js';
 import Compare from './components/Compare.js';
 

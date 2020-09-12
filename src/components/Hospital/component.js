@@ -1,4 +1,5 @@
 import React,{useState, useEffect} from 'react';
+import './Hospital.css';
 
 const Hospital = () => {
   const [error, setError] = useState(null);
@@ -37,13 +38,37 @@ const Hospital = () => {
     return <div>Loading...</div>;
   } else {
     return (
-      <ul>
+    <table>
+        <tr>
+            <th>State Name</th>
+            <th>Rural Hospitals</th>
+             <th>Rural Beds</th>
+             <th>Urban Hospitals</th>
+              <th>Urban Beds</th>
+               <th>Total Hospitals</th>
+              <th>Total Beds(State Wise)</th>
+          </tr>
+            <tbody>
+               {
+                  items.map((numList,i) =>(
+                                   <tr key={i}>
+                                          {
+                                            Object.keys(numList).map((keyName, j) => (
+                                                j<7 &&  <td key={j}>{numList[keyName]}</td>
+                                              ))
+                                           }
+                                     </tr>
+                        ))
+                   }
+                 </tbody>
+               </table>
+     /* <ul>
         {items.map(item => (
           <li key={item.state + makeid(5)}>
             {item.state} {item.ruralHospitals} {item.ruralBeds} {item.urbanHospitals} {item.urbanBeds} {item.totalHospitals} {item.totalBeds}
           </li>
         ))}
-      </ul>
+      </ul>*/
     );
   }
 }
