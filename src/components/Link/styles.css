@@ -1,0 +1,15 @@
+.Link a {
+  background-color: blue;
+  color: white;
+  padding: 2rem;
+  text-transform: uppercase;
+  border-radius: 12px;
+  width:3rem;
+  margin:1rem;
+}
+
+.Link a:hover {
+  background-color: grey;
+}
+
+
