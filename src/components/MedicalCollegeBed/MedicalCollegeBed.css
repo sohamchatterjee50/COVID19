@@ -1,0 +1,10 @@
+table,tbody,tr,td,th {
+      border: 1px solid black;
+}
+.Form {
+float:left;
+}
+.Label{
+font-weight:bold;
+margin-left: 15rem;
+}

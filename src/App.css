@@ -37,10 +37,10 @@
   }
 }
 
-.button{
+.Button{
 float:left
 }
-button{
+.Button{
     background-color: blue;
     color: white;
     padding: 2rem;
@@ -49,6 +49,6 @@ button{
     width: 15rem;
     margin: 1rem;
 }
-button:hover {
+.Button:hover {
   background-color: grey;
 }

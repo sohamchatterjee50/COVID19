@@ -38,20 +38,15 @@ const Notify = () => {
     return <div>Loading...</div>;
   } else {
     return (
-      /*<ul>
-        {items.map(item => (
-          <li key={item.link + makeid(5) }>
-            {item.title} {item.link}
-          </li>
-        ))}
-      </ul>*/
       <table>
+          <thead key={makeid(6)}>
           <tr>
                <th>Date</th>
               <th>Notification Title</th>
               <th>Link</th>
-            </tr>
-              <tbody>
+              </tr>
+            </thead>
+              <tbody key={makeid(7)}>
                  {
                     items.map((numList,i) =>(
                                      <tr key={i + makeid(5)}>

@@ -39,6 +39,7 @@ const Hospital = () => {
   } else {
     return (
     <table>
+        <thead>
         <tr>
             <th>State Name</th>
             <th>Rural Hospitals</th>
@@ -47,7 +48,8 @@ const Hospital = () => {
               <th>Urban Beds</th>
                <th>Total Hospitals</th>
               <th>Total Beds(State Wise)</th>
-          </tr>
+              </tr>
+          </thead>
             <tbody>
                {
                   items.map((numList,i) =>(
@@ -62,13 +64,6 @@ const Hospital = () => {
                    }
                  </tbody>
                </table>
-     /* <ul>
-        {items.map(item => (
-          <li key={item.state + makeid(5)}>
-            {item.state} {item.ruralHospitals} {item.ruralBeds} {item.urbanHospitals} {item.urbanBeds} {item.totalHospitals} {item.totalBeds}
-          </li>
-        ))}
-      </ul>*/
     );
   }
 }

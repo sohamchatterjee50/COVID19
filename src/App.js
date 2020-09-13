@@ -4,7 +4,7 @@ import Link from './components/Link/component.js';
 import Contact from './components/Contact/component.js';
 import Notify from './components/Notify/component.js';
 import Hospital from './components/Hospital/component.js';
-import MedicalCollegeBed from './components/MedicalCollegeBed.js';
+import MedicalCollegeBed from './components/MedicalCollegeBed/component.js';
 import Compare from './components/Compare.js';
 
 const App = () => {
@@ -17,11 +17,11 @@ const App = () => {
   return (
     <div className="App">
    <div className="App-header">
-           <button id="Contact" onClick={() => handleClick(1)}>Contact/Helpline</button>
-           <button id="Notify" onClick={() => handleClick(2)}>Notify/Advisory</button>
-           <button id="Hospital"  onClick={() => handleClick(3)}>Hospital Dashboard (Hospitals and beds)</button>
-           <button id="Hospital"  onClick={() => handleClick(4)}>Hospital Dashboard (Medical colleges and beds)</button>
-           <button id="Compare" onClick={() => handleClick(5)}>Daily Sample Tests vs Confirmed Cases</button>
+           <button className="Button" id="Contact" onClick={() => handleClick(1)}>Contact/Helpline</button>
+           <button className="Button" id="Notify" onClick={() => handleClick(2)}>Notify/Advisory</button>
+           <button className="Button" id="Hospital"  onClick={() => handleClick(3)}>Hospital Dashboard (Hospitals and beds)</button>
+           <button className="Button" id="Hospital"  onClick={() => handleClick(4)}>Hospital Dashboard (Medical colleges and beds)</button>
+           <button className="Button" id="Compare" onClick={() => handleClick(5)}>Daily Sample Tests vs Confirmed Cases</button>
    	  </div>
 
 

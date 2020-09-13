@@ -29,10 +29,12 @@ const Contact = () => {
   } else {
     return (
     <table>
+    <thead>
     <tr>
         <th>State Name</th>
         <th>Helpline Number</th>
-      </tr>
+        </tr>
+      </thead>
         <tbody>
            {
               items.map((numList,i) =>(
